@@ -8,7 +8,13 @@
 
 import Cocoa
 
-class ViewController: NSViewController {
+class MainViewController: NSViewController {
+    
+    // MARK: - PROPERTIES
+    
+    var model = MainViewModel()
+    
+    // MARK: LIFECYCLE
 
     override func viewDidLoad() {
         super.viewDidLoad()
