@@ -8,26 +8,39 @@
 
 import Cocoa
 
+protocol MainViewControllerProtocol : class {
+    
+    func authenticationNeeded()
+    func alreadyAuthenticated(withCredentials credentials: Credentials)
+    
+}
+
 class MainViewController: NSViewController {
     
     // MARK: - PROPERTIES
     
-    var model = MainViewModel()
+    var presenter: MainPresenterProtocol = MainPresenter()
     
-    // MARK: LIFECYCLE
+    // MARK: - LIFECYCLE
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        presenter.view = self
+        
+        presenter.verifyAuthentication()
     }
-
-    override var representedObject: Any? {
-        didSet {
-        // Update the view, if already loaded.
-        }
-    }
-
 
 }
 
+extension MainViewController : MainViewControllerProtocol {
+    
+    func authenticationNeeded() {
+        
+    }
+    
+    func alreadyAuthenticated(withCredentials credentials: Credentials) {
+        
+    }
+    
+}

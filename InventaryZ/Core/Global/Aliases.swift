@@ -1,5 +1,5 @@
 //
-//  MainViewModel.swift
+//  Aliases.swift
 //  InventaryZ
 //
 //  Created by Sergio Daniel Lozano on 3/31/17.
@@ -8,8 +8,4 @@
 
 import Foundation
 
-class MainViewModel {
-    
-    
-    
-}
+typealias Credentials = (String, String)
