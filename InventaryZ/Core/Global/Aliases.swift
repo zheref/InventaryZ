@@ -9,3 +9,11 @@
 import Foundation
 
 typealias Credentials = (String, String)
+
+typealias Callback = () -> Void
+
+typealias AssetsReturner = ([Asset]) -> Void
+
+typealias AssetReturner = (Asset) -> Void
+
+typealias ErrorReturner = (Error) -> Void

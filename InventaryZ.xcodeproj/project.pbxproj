@@ -40,6 +40,12 @@
 		78D4C67B1E8F0F6500307912 /* AssetNeed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D4C67A1E8F0F6500307912 /* AssetNeed.swift */; };
 		78D4C67C1E8F0F6500307912 /* AssetNeed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D4C67A1E8F0F6500307912 /* AssetNeed.swift */; };
 		78D4C67D1E8F0F6500307912 /* AssetNeed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D4C67A1E8F0F6500307912 /* AssetNeed.swift */; };
+		78D4C6801E8F12B400307912 /* CloudKitParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D4C67F1E8F12B400307912 /* CloudKitParser.swift */; };
+		78D4C6811E8F12B400307912 /* CloudKitParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D4C67F1E8F12B400307912 /* CloudKitParser.swift */; };
+		78D4C6821E8F12B400307912 /* CloudKitParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D4C67F1E8F12B400307912 /* CloudKitParser.swift */; };
+		78D4C6841E8F12E300307912 /* AssetsStoreProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D4C6831E8F12E300307912 /* AssetsStoreProtocol.swift */; };
+		78D4C6851E8F12E300307912 /* AssetsStoreProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D4C6831E8F12E300307912 /* AssetsStoreProtocol.swift */; };
+		78D4C6861E8F12E300307912 /* AssetsStoreProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D4C6831E8F12E300307912 /* AssetsStoreProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +89,8 @@
 		78D4C6721E8F0EAD00307912 /* AssetEnvironment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AssetEnvironment.swift; path = Core/Asset/AssetEnvironment.swift; sourceTree = "<group>"; };
 		78D4C6761E8F0F2D00307912 /* AssetState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AssetState.swift; path = Core/Asset/AssetState.swift; sourceTree = "<group>"; };
 		78D4C67A1E8F0F6500307912 /* AssetNeed.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AssetNeed.swift; path = Core/Asset/AssetNeed.swift; sourceTree = "<group>"; };
+		78D4C67F1E8F12B400307912 /* CloudKitParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CloudKitParser.swift; path = Core/CloudKit/CloudKitParser.swift; sourceTree = "<group>"; };
+		78D4C6831E8F12E300307912 /* AssetsStoreProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AssetsStoreProtocol.swift; path = Core/Asset/AssetsStoreProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -185,6 +193,7 @@
 		78D4C6571E8EF18500307912 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				78D4C67E1E8F128300307912 /* CloudKit */,
 				78D4C66D1E8F0DDB00307912 /* Asset */,
 				78D4C6581E8EF19200307912 /* Global */,
 			);
@@ -216,8 +225,17 @@
 				78D4C6721E8F0EAD00307912 /* AssetEnvironment.swift */,
 				78D4C6761E8F0F2D00307912 /* AssetState.swift */,
 				78D4C67A1E8F0F6500307912 /* AssetNeed.swift */,
+				78D4C6831E8F12E300307912 /* AssetsStoreProtocol.swift */,
 			);
 			name = Asset;
+			sourceTree = "<group>";
+		};
+		78D4C67E1E8F128300307912 /* CloudKit */ = {
+			isa = PBXGroup;
+			children = (
+				78D4C67F1E8F12B400307912 /* CloudKitParser.swift */,
+			);
+			name = CloudKit;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -366,11 +384,13 @@
 			files = (
 				78D4C6731E8F0EAD00307912 /* AssetEnvironment.swift in Sources */,
 				78D4C62A1E8ED1E500307912 /* MainViewController.swift in Sources */,
+				78D4C6841E8F12E300307912 /* AssetsStoreProtocol.swift in Sources */,
 				78D4C66A1E8F0DD500307912 /* Asset.swift in Sources */,
 				78D4C65E1E8EF97000307912 /* K.swift in Sources */,
 				78D4C6621E8EF9D900307912 /* Aliases.swift in Sources */,
 				78D4C66F1E8F0E4300307912 /* AssetCategory.swift in Sources */,
 				78D4C65A1E8EF1C700307912 /* LocalStorage.swift in Sources */,
+				78D4C6801E8F12B400307912 /* CloudKitParser.swift in Sources */,
 				78D4C6281E8ED1E500307912 /* AppDelegate.swift in Sources */,
 				78D4C6771E8F0F2D00307912 /* AssetState.swift in Sources */,
 				78D4C67B1E8F0F6500307912 /* AssetNeed.swift in Sources */,
@@ -383,6 +403,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				78D4C65F1E8EF97000307912 /* K.swift in Sources */,
+				78D4C6811E8F12B400307912 /* CloudKitParser.swift in Sources */,
 				78D4C6741E8F0EAD00307912 /* AssetEnvironment.swift in Sources */,
 				78D4C67C1E8F0F6500307912 /* AssetNeed.swift in Sources */,
 				78D4C63A1E8ED1E500307912 /* InventaryZTests.swift in Sources */,
@@ -391,6 +412,7 @@
 				78D4C6631E8EF9D900307912 /* Aliases.swift in Sources */,
 				78D4C6701E8F0E4300307912 /* AssetCategory.swift in Sources */,
 				78D4C65B1E8EF1C700307912 /* LocalStorage.swift in Sources */,
+				78D4C6851E8F12E300307912 /* AssetsStoreProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -400,10 +422,12 @@
 			files = (
 				78D4C66C1E8F0DD500307912 /* Asset.swift in Sources */,
 				78D4C6641E8EF9D900307912 /* Aliases.swift in Sources */,
+				78D4C6861E8F12E300307912 /* AssetsStoreProtocol.swift in Sources */,
 				78D4C6711E8F0E4300307912 /* AssetCategory.swift in Sources */,
 				78D4C65C1E8EF1C700307912 /* LocalStorage.swift in Sources */,
 				78D4C6791E8F0F2D00307912 /* AssetState.swift in Sources */,
 				78D4C6601E8EF97000307912 /* K.swift in Sources */,
+				78D4C6821E8F12B400307912 /* CloudKitParser.swift in Sources */,
 				78D4C6451E8ED1E500307912 /* InventaryZUITests.swift in Sources */,
 				78D4C6751E8F0EAD00307912 /* AssetEnvironment.swift in Sources */,
 				78D4C67D1E8F0F6500307912 /* AssetNeed.swift in Sources */,
