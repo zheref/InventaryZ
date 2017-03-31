@@ -25,6 +25,21 @@
 		78D4C6631E8EF9D900307912 /* Aliases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D4C6611E8EF9D900307912 /* Aliases.swift */; };
 		78D4C6641E8EF9D900307912 /* Aliases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D4C6611E8EF9D900307912 /* Aliases.swift */; };
 		78D4C6681E8F061400307912 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78D4C6671E8F061400307912 /* CloudKit.framework */; };
+		78D4C66A1E8F0DD500307912 /* Asset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D4C6691E8F0DD500307912 /* Asset.swift */; };
+		78D4C66B1E8F0DD500307912 /* Asset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D4C6691E8F0DD500307912 /* Asset.swift */; };
+		78D4C66C1E8F0DD500307912 /* Asset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D4C6691E8F0DD500307912 /* Asset.swift */; };
+		78D4C66F1E8F0E4300307912 /* AssetCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D4C66E1E8F0E4300307912 /* AssetCategory.swift */; };
+		78D4C6701E8F0E4300307912 /* AssetCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D4C66E1E8F0E4300307912 /* AssetCategory.swift */; };
+		78D4C6711E8F0E4300307912 /* AssetCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D4C66E1E8F0E4300307912 /* AssetCategory.swift */; };
+		78D4C6731E8F0EAD00307912 /* AssetEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D4C6721E8F0EAD00307912 /* AssetEnvironment.swift */; };
+		78D4C6741E8F0EAD00307912 /* AssetEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D4C6721E8F0EAD00307912 /* AssetEnvironment.swift */; };
+		78D4C6751E8F0EAD00307912 /* AssetEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D4C6721E8F0EAD00307912 /* AssetEnvironment.swift */; };
+		78D4C6771E8F0F2D00307912 /* AssetState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D4C6761E8F0F2D00307912 /* AssetState.swift */; };
+		78D4C6781E8F0F2D00307912 /* AssetState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D4C6761E8F0F2D00307912 /* AssetState.swift */; };
+		78D4C6791E8F0F2D00307912 /* AssetState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D4C6761E8F0F2D00307912 /* AssetState.swift */; };
+		78D4C67B1E8F0F6500307912 /* AssetNeed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D4C67A1E8F0F6500307912 /* AssetNeed.swift */; };
+		78D4C67C1E8F0F6500307912 /* AssetNeed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D4C67A1E8F0F6500307912 /* AssetNeed.swift */; };
+		78D4C67D1E8F0F6500307912 /* AssetNeed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D4C67A1E8F0F6500307912 /* AssetNeed.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +78,11 @@
 		78D4C6611E8EF9D900307912 /* Aliases.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Aliases.swift; path = Core/Global/Aliases.swift; sourceTree = "<group>"; };
 		78D4C6651E8F05F900307912 /* InventaryZ.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = InventaryZ.entitlements; sourceTree = "<group>"; };
 		78D4C6671E8F061400307912 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		78D4C6691E8F0DD500307912 /* Asset.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Asset.swift; path = Core/Asset.swift; sourceTree = "<group>"; };
+		78D4C66E1E8F0E4300307912 /* AssetCategory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AssetCategory.swift; path = Core/Asset/AssetCategory.swift; sourceTree = "<group>"; };
+		78D4C6721E8F0EAD00307912 /* AssetEnvironment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AssetEnvironment.swift; path = Core/Asset/AssetEnvironment.swift; sourceTree = "<group>"; };
+		78D4C6761E8F0F2D00307912 /* AssetState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AssetState.swift; path = Core/Asset/AssetState.swift; sourceTree = "<group>"; };
+		78D4C67A1E8F0F6500307912 /* AssetNeed.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AssetNeed.swift; path = Core/Asset/AssetNeed.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,6 +185,7 @@
 		78D4C6571E8EF18500307912 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				78D4C66D1E8F0DDB00307912 /* Asset */,
 				78D4C6581E8EF19200307912 /* Global */,
 			);
 			name = Core;
@@ -185,6 +206,18 @@
 				78D4C6671E8F061400307912 /* CloudKit.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		78D4C66D1E8F0DDB00307912 /* Asset */ = {
+			isa = PBXGroup;
+			children = (
+				78D4C6691E8F0DD500307912 /* Asset.swift */,
+				78D4C66E1E8F0E4300307912 /* AssetCategory.swift */,
+				78D4C6721E8F0EAD00307912 /* AssetEnvironment.swift */,
+				78D4C6761E8F0F2D00307912 /* AssetState.swift */,
+				78D4C67A1E8F0F6500307912 /* AssetNeed.swift */,
+			);
+			name = Asset;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -331,11 +364,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				78D4C6731E8F0EAD00307912 /* AssetEnvironment.swift in Sources */,
 				78D4C62A1E8ED1E500307912 /* MainViewController.swift in Sources */,
+				78D4C66A1E8F0DD500307912 /* Asset.swift in Sources */,
 				78D4C65E1E8EF97000307912 /* K.swift in Sources */,
 				78D4C6621E8EF9D900307912 /* Aliases.swift in Sources */,
+				78D4C66F1E8F0E4300307912 /* AssetCategory.swift in Sources */,
 				78D4C65A1E8EF1C700307912 /* LocalStorage.swift in Sources */,
 				78D4C6281E8ED1E500307912 /* AppDelegate.swift in Sources */,
+				78D4C6771E8F0F2D00307912 /* AssetState.swift in Sources */,
+				78D4C67B1E8F0F6500307912 /* AssetNeed.swift in Sources */,
 				78D4C6551E8EEE4D00307912 /* MainPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -345,8 +383,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				78D4C65F1E8EF97000307912 /* K.swift in Sources */,
+				78D4C6741E8F0EAD00307912 /* AssetEnvironment.swift in Sources */,
+				78D4C67C1E8F0F6500307912 /* AssetNeed.swift in Sources */,
 				78D4C63A1E8ED1E500307912 /* InventaryZTests.swift in Sources */,
+				78D4C66B1E8F0DD500307912 /* Asset.swift in Sources */,
+				78D4C6781E8F0F2D00307912 /* AssetState.swift in Sources */,
 				78D4C6631E8EF9D900307912 /* Aliases.swift in Sources */,
+				78D4C6701E8F0E4300307912 /* AssetCategory.swift in Sources */,
 				78D4C65B1E8EF1C700307912 /* LocalStorage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -355,10 +398,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				78D4C66C1E8F0DD500307912 /* Asset.swift in Sources */,
 				78D4C6641E8EF9D900307912 /* Aliases.swift in Sources */,
+				78D4C6711E8F0E4300307912 /* AssetCategory.swift in Sources */,
 				78D4C65C1E8EF1C700307912 /* LocalStorage.swift in Sources */,
+				78D4C6791E8F0F2D00307912 /* AssetState.swift in Sources */,
 				78D4C6601E8EF97000307912 /* K.swift in Sources */,
 				78D4C6451E8ED1E500307912 /* InventaryZUITests.swift in Sources */,
+				78D4C6751E8F0EAD00307912 /* AssetEnvironment.swift in Sources */,
+				78D4C67D1E8F0F6500307912 /* AssetNeed.swift in Sources */,
 				78D4C6561E8EEE4D00307912 /* MainPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
